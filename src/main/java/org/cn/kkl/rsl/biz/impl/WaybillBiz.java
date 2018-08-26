@@ -10,7 +10,7 @@ public class WaybillBiz extends BaseBiz<Waybill> implements IWaybillBiz {
 
 	public void setWaybillDao(IWaybillDao waybillDao) {
 		this.waybillDao = waybillDao;
-		//super.setBaseDao(this.waybillDao);
+		super.setBaseDao(this.waybillDao);
 	}
 	
 	

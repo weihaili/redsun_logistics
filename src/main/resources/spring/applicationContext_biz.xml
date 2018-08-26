@@ -17,6 +17,11 @@
 		<property name="waybillDao" ref="waybillDao"></property>
 	</bean>
 	
+	<!-- waybillDetail -->
+	<bean id="waybillDetailBiz" class="org.cn.kkl.rsl.biz.impl.WaybillDetailBiz">
+		<property name="waybillDetailDao" ref="waybillDetailDao"></property>
+	</bean>
+	
 	
 </beans>
 	

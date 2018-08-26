@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet" type="text/css"
+	href="ui/themes/default/easyui.css">
+<link rel="stylesheet" type="text/css" href="ui/themes/icon.css">
+<script type="text/javascript" src="ui/jquery.min.js"></script>
+<script type="text/javascript" src="ui/jquery.easyui.min.js"></script>
+<script type="text/javascript" src="ui/jquery.easyui.min.js"></script>
+<script type="text/javascript" src="ui/jquery.serializejson.min.js"></script>
+<script type="text/javascript" src="ui/locale/easyui-lang-zh_CN.js"></script>
+<script type="text/javascript" src="js/waybill.js"></script>
+</head>
+<body>
+<div class="easyui-panel" style="padding-left: 4px;border-bottom: 0px;">
+	<div style="height: 4px;"></div>
+	<!-- query according to query conditions -->
+	<form id="searchForm">
+		<table></table>
+	</form>
+	
+	<!-- display data -->
+	<table id="grid"></table>
+	
+	<!-- modify data dialog -->
+	<div id="editDlg">
+		<form id="editForm"></form>
+	</div>
+	
+	<!-- add record dialog -->
+	<div id="addDlg">
+		<form id="addForm"></form>
+	</div>
+	
+	<div id="importDlg">
+		<form id="importForm"></form>
+	</div>
+</div>
+</body>
+</html>

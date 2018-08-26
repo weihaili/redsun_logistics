@@ -12,10 +12,12 @@
 		http://www.springframework.org/schema/aop 
 		http://www.springframework.org/schema/aop/spring-aop.xsd
 		">  
-	<!-- <bean id="depAction" class="org.cn.kkl.erp.action.DepAction" scope="prototype">
-		<property name="depBiz" ref="depBiz"></property>
-	</bean> -->
+	<bean id="waybillAction" class="org.cn.kkl.rsl.action.WaybillAction" scope="prototype">
+		<property name="waybillBiz" ref="waybillBiz"></property>
+	</bean>
 	
-	
+	<bean id="waybillDetailAction" class="org.cn.kkl.rsl.action.WaybillDetailAction">
+		<property name="waybillDetailBiz" ref="waybillDetailBiz"></property>
+	</bean>
 </beans>
 	

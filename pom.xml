@@ -13,6 +13,7 @@
 		<shiro.version>1.2.3</shiro.version>
 		<cxf.version>3.0.10</cxf.version>
 		<spring.version>4.2.4.RELEASE</spring.version>
+		<poi.version>3.11</poi.version>
 	</properties>
 
 	<dependencies>
@@ -145,7 +146,14 @@
 			<artifactId>cxf-rt-transports-http</artifactId>
 			<version>${cxf.version}</version>
 		</dependency>
-
+		
+		<!-- https://mvnrepository.com/artifact/org.apache.poi/poi -->
+		<dependency>
+			<groupId>org.apache.poi</groupId>
+			<artifactId>poi</artifactId>
+			<version>${poi.version}</version>
+		</dependency>
+		
 		<dependency>
 			<groupId>javax.servlet</groupId>
 			<artifactId>servlet-api</artifactId>
@@ -155,6 +163,24 @@
 	</dependencies>
 
 	<build>
+		<resources>
+			<resource>
+				<directory>src/main/java</directory>
+				<includes>
+					<include>**/*.properties</include>
+					<include>**/*.xml</include>
+				</includes>
+				<filtering>false</filtering>
+			</resource>
+			<resource>
+				<directory>src/main/resources</directory>
+				<includes>
+					<include>**/*.properties</include>
+					<include>**/*.xml</include>
+				</includes>
+				<filtering>false</filtering>
+			</resource>
+		</resources>
 		<plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
@@ -171,7 +197,7 @@
 				<configuration>
 					<port>8090</port>
 					<!-- 项目访问路径 -->
-					<path>/</path>
+					<path>/redsun</path>
 					<!-- 解决传输数据乱码 -->
 					<uriEncoding>utf-8</uriEncoding>
 				</configuration>

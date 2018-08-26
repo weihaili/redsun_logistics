@@ -1,8 +1,11 @@
 package org.cn.kkl.rsl.dao;
 
-import org.cn.kkl.rsl.biz.IBaseBiz;
+import javax.jws.WebService;
+
 import org.cn.kkl.rsl.entity.Waybill;
 
-public interface IWaybillDao extends IBaseBiz<Waybill> {
+@WebService
+public interface IWaybillDao extends IBaseDao<Waybill> {
+	
 
 }

@@ -18,5 +18,10 @@
 		<property name="sessionFactory" ref="sessionFactory"></property>
 	</bean>
 	
+	<!-- waybillDetail -->
+	<bean id="waybillDetailDao" class="org.cn.kkl.rsl.dao.impl.WaybillDetailDao">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+	
 </beans>
 	

@@ -1,6 +1,7 @@
 package org.cn.kkl.rsl.entity;
 
 import java.io.Serializable;
+import java.util.List;
 
 public class Waybill implements Serializable {
 
@@ -16,6 +17,13 @@ public class Waybill implements Serializable {
 	private String tele;   //'收件人电话'
 	private String info;   //'运单详情'
 	private String state;  //'运单状态'
+	private List<WaybillDetail> waybilldetails;
+	public List<WaybillDetail> getWaybilldetails() {
+		return waybilldetails;
+	}
+	public void setWaybilldetails(List<WaybillDetail> waybilldetails) {
+		this.waybilldetails = waybilldetails;
+	}
 	public Long getSn() {
 		return sn;
 	}
